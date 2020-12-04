@@ -1,4 +1,4 @@
-package com.franktran.springdata.springjdbc;
+package com.franktran.springdata.springjdbc.student;
 
 import java.util.UUID;
 
@@ -30,5 +30,15 @@ public class Student {
 
     public String getEmail() {
         return email;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
